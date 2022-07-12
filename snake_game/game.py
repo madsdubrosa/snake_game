@@ -1,25 +1,12 @@
 
 import pygame
 
-from test_applications.games.pygame_snake_game.V2.color import Color
-from test_applications.games.pygame_snake_game.V2.food import Food
-from test_applications.games.pygame_snake_game.V2.snake import Snake
+from snake_game.color import Color
+from snake_game.food import Food
+from snake_game.snake import Snake
 
 
 class SnakeGame:
-    """
-    1) do:
-        --> pygame.init()
-        --> keep track of score
-        --> update the display regularly
-        --> win / loss situation
-        --> continuing game or not
-    2) has:
-        --> snake object // field
-        --> food object // field
-        --> display // field
-        --> score + high_score // fied
-    """
     def __init__(self, display_width=800, display_height=600, caption="Sankey Game"):
         success, failure = pygame.init()
         if failure > 0:
